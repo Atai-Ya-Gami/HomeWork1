@@ -1,6 +1,7 @@
 package com.company;
-import java.util.Scanner;
+
 import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -24,39 +25,75 @@ public class Main {
 //        System.out.println("Введите ваше имя :");
 //        String UserName = SomeWord.nextLine();
 //        System.out.println("Здравствуйте " + UserName);
-        HoweTask DoSome = new HoweTask();
-        int a = DoSome.GenerateRandomAge(100);
-        int b = DoSome.GenerateRandomAge(100);
-// тут крч я сделал метод который возвращает рандомные числа, но проблема в том,
-// что метод WeatherAdvice берет в параметры только целочисленные значения, и когда я ставлю переменную a или b то функция перестает работать.
-        DoSome.WeatherAdvice(50,50);
-        DoSome.WeatherAdvice(5,25);
-        DoSome.WeatherAdvice(25,30);
-        DoSome.WeatherAdvice(46,20);
-        DoSome.WeatherAdvice(46,-11);
-        DoSome.WeatherAdvice(46,-11);
-    }
-}
-class HoweTask{
-    public static int GenerateRandomAge(int upperRange){
-        Random random = new Random();
-        return random.nextInt(upperRange);
-        }
-    public static void WeatherAdvice(int Age, int Weather) {
-        if(Age > 20 && Age < 45) if (Weather > -20 && Weather < 30) {
-            System.out.println("Можно идти гулять");
-        }
-        if(Age<20) if(Weather > 0 && Weather < 28){
-            System.out.println("Можно идти гулять");
-        }
-        if(Age>45) if (Weather > -10 && Weather <25){
-            System.out.println("Можно идти гулять");
-        }else {
-            System.out.println("Оставайтесь дома.");
-        }
+//        HoweTask DoSome = new HoweTask();
+//        int a = DoSome.GenerateRandomAge(100);
+//        int b = DoSome.GenerateRandomAge(100);
 
-    }
-    }
-
+//        weatherAdvice(25,25);
+//        weatherAdvice(generateRandomAge(), generateTemperature());
+//
+//
+//
+//    }
+//
+//    public static void weatherAdvice(int Age, int Weather) {
+//        if (Age > 20 && Age < 45) {
+//            if (Weather > -20 && Weather < 30) {
+//                System.out.println("Можно идти гулять");
+//            }
+//        }
+//        else if (Age < 20) {
+//            if (Weather > 0 && Weather < 28) {
+//                System.out.println("Можно идти гулять");
+//            }
+//        }
+//        if (Age > 45) {if (Weather > -10 && Weather < 25)
+//            System.out.println("Можно идти гулять");
+//        } else {
+//            System.out.println("Оставайтесь дома.");
+//        }
+//    }
+//
+//    public static int generateRandomAge() {
+//        int min = 13;
+//        int max = 71;
+//        int diff = max - min;
+//        Random random = new Random();
+//        int SomeAge = random.nextInt(diff);
+//        return SomeAge;
+//
+//    }
+//
+//    public static int generateTemperature() {
+//        int min = -50;
+//        int max = 50;
+//        int diff = max - min;
+//        Random random = new Random();
+//        int SomeTemperature = random.nextInt(diff);
+//        return SomeTemperature;
+//    }
+//}
+//        double[] arr = {15.5, 4.6, 7.8, -6.7, 6.0, 1, 2, -3.4, 5.6, 3.7, 5.8, 6.9, 8.2, 9.4, 10};
+//        boolean firstNegativeFound = false;
+//        double sum = 0;
+//        double count = 0;
+//
+//        for (int i = 0; i < arr.length; i++) {
+//            if (!firstNegativeFound && arr[i] < 0) {
+//                firstNegativeFound = true;
+//                continue;
+//            }
+//            if (firstNegativeFound) {
+//                sum += arr[i];
+//                count++;
+//
+//            }
+//            System.out.println(arr[i]);
+//        }
+//
+//        System.out.println("Sum is: " + sum);
+//        System.out.println("Count is: " + count);
+//        System.out.println("Arithmetic mean is : " + sum/count );
+   }}
 
 
